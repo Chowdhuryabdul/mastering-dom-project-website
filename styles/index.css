@@ -1,0 +1,93 @@
+body {
+    font-family: "Lato", sans-serif;
+    max-width: 1920px;
+    
+}
+header{
+      
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background: 	#A9A9A9; 
+}
+
+.right-icon{
+    display: flex;;
+    align-items: center;
+    gap: 40px;
+   
+}
+
+.shopping-cart{
+    display: flex;
+    align-items: center;
+}
+
+.banner{
+    display: flex;
+    margin: auto;
+    max-width: 1500px;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.section-1{
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 5px #A9A9A9;
+    padding: 10px 10px;
+    gap: 30px;
+    border-radius: 10px;
+}
+
+.image{
+    height: 100px;
+    width: 200px;
+}
+
+.heading{
+    margin-bottom: 0;
+    font-size:20px ;
+    font-weight:bolder
+}
+.heading-cost{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.add-btn{
+    margin-top: 10px;
+}
+
+.main{
+    display: flex;
+    gap: 300px;
+}
+
+.right-part{
+    box-shadow: 2px 2px 5px #A9A9A9;;
+   padding: 10px 10px;
+    border-radius: 10px;
+    width: 300px;   
+}
+
+.p-cart, .p-cost,.p-totla{
+    text-align: center;
+    font-size: 25px;
+    font-style: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+hr{
+    margin-bottom: 0;
+}
+
+.btn-div{
+    display: flex;
+    justify-content: center;
+}
