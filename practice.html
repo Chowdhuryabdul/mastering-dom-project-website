@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is the wesbsite to make the master in DOM</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://kit.fontawesome.com/7b91b0656b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="Flower/Flower 01.png" type="Flower/Flower01.png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <i class="fa-solid fa-sun"></i>
+            </div>
+            <div  class="right-icon">
+                <div class="shopping-cart">
+                    <h2 class="count">0</h2>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Home</p>  
+                </div>
+                <p>Setting</p>
+                <i class="fa-solid fa-head-side-virus"></i>
+            </div>
+        </nav>
+        <div class="banner">
+            <div>
+                <h2>Lets Travel</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus illum quas enim error eius. Culpa sint accusantium perspiciatis vero, dolor qui ea, ratione, incidunt eum quo quod animi quam hic?</p>
+                <h1>Total budget: <span id="budget">900</span>$</h1>
+            </div>
+            <div>
+                <img src="Flower/Flower 01.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+       <div class="main">
+        <div>
+         <div class="section-1">
+            <img class="image" src="Flower/Flower 01.png" alt="">
+            <div>
+                <h2 class="heading">Sajek</h2>
+                <h4 class="heading-cost">Cost : <span>300</span> $ </h4>
+                <!-- <button onclick="handelSelect()" class="add-btn">Add to cart</button>  'here we have called the function' -->
+                <button   class="add-btn">Add to cart</button>  <!--here it is used to diabled the button and doSomething function is declared in js file. onclick="this.disabled = true; doSomething()" -->
+            </div>
+        </div>
+         <div class="section-1">
+            <img class="image" src="Flower/Flower 01.png" alt="">
+            <div>
+                <h2 class="heading">Dhaka</h2>
+                <h4 class="heading-cost">Cost : <span>500</span> $ </h4>
+                <button class="add-btn">Add to cart</button>
+            </div>
+        </div>
+         <div class="section-1">
+            <img class="image" src="Flower/Flower 01.png" alt="">
+            <div>
+                <h2 class="heading">Khulna</h2>
+                <h4 class="heading-cost">Cost : <span>800</span> $ </h4>
+                <button class="add-btn">Add to cart</button>
+            </div>
+        </div>
+         <div class="section-1">
+            <img class="image" src="Flower/Flower 01.png" alt="">
+            <div>
+                <h2 class="heading">Cox's Bazar</h2>
+                <h4 class="heading-cost">Cost : <span>600</span> $ </h4>
+                <button class="add-btn">Add to cart</button>
+            </div>
+        </div>
+       </div>
+        <div class="right-part">
+            <p class="p-cart">Cart</p>
+            <hr>
+            <ul id="selected-place-container" class="selected-place-container">
+
+            </ul>
+           
+            <p class="p-cost">Total Cost: <span id="total-cost">0</span>$</p>
+            <div class="btn-div">
+                <button id="bus-btn" >Bus + <span id="bus-price">100</span></button>
+                <button id="train-btn" >Train - <span id="train-price">200</span></button>
+                <button id="flight-btn" >Flight + <span id="flight-price">500</span></button>
+            </div>
+            <hr>
+            <p class="p-totla">Grand Total: <span id="grand-total">0</span></p>
+        </div>
+       </div>
+    </main>
+ <script src="js/practice.js"></script>
+ <script src="js/library.js"></script>
+</body>
+
+</html>

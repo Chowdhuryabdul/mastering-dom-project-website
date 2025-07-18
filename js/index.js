@@ -72,13 +72,12 @@ function totalCost(id, value) {
     if(category == 'Bus'){
        setInnertext('grand-total', convertedTotalCost + 100 ) 
     }
-    
     else if(category == 'Train'){
         setInnertext('grand-total', convertedTotalCost - 200)
     }else if (category == 'Flight'){
         setInnertext('grand-total', convertedTotalCost + 500)
     }else{
-        setInnertext('grand-total', convertedTotalCost )
+        setInnertext('grand-total', convertedTotalCost)
     }
    /*  const grandTotal = document.getElementById(id).innerText
     // console.log(grandTotal);
@@ -93,6 +92,7 @@ function setInnertext(id, value) { /* i have to put the id of the element, of wh
     document.getElementById(id).innerText = value
 }
 
+/* to disable the btn */
 /* function doSomething(){
     alert('The button is clicked adn the function ran!')
 } */
