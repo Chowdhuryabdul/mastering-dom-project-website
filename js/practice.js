@@ -1,5 +1,3 @@
-
-
 const allBtn = document.getElementsByClassName('add-btn');
 for(let btn of allBtn){
  btn.addEventListener('click', function(e){
@@ -10,7 +8,7 @@ for(let btn of allBtn){
 
      /* to make some style */
 
-     e.target.parentNode.parentNode.style.backgroundColor = 'gray'
+    e.target.parentNode.parentNode.style.backgroundColor = 'gray'
     e.target.style.backgroundColor = 'red'
    
      /* to disabled the btn after one click */
@@ -50,8 +48,10 @@ for(let btn of allBtn){
     const TotalBudget = convertedToNumber('budget')
     const remainingBudget = TotalBudget - parseInt(price)
     setInnerText('budget', remainingBudget)
+
     if(TotalBudget + remainingBudget < 0){
         alert ('You need to earn more')
+        return ;
     }
     // console.log(TotalBudget);
     

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>How to make a button enable and disabled</title>
+</head>
+<body>
+    <h1 id="secret-info">Here i will show how to dis</h1>
+    <input id="delete-confirm" type="text" placeholder="You need to write delete here">
+    <button id="btn-delete" disabled>Delete</button>
+</body>
+<script>
+    document.getElementById('delete-confirm').addEventListener('keyup', function(event){
+        // const text = document.getElementById('delete-confirm').value
+        const text = event.target.value
+        console.log(text);
+        /* to enable the disabled button */
+        const deleteBtn = document.getElementById('btn-delete')
+        if(text === 'delete'){
+            deleteBtn.removeAttribute('disabled')
+        }else{
+            deleteBtn.setAttribute('disabled', true)
+        }
+    })
+    document.getElementById('btn-delete').addEventListener('click', function(){
+        const secretInfo = document.getElementById('secret-info')
+        secretInfo.style.display = 'none'
+    })
+</script>
+</html>

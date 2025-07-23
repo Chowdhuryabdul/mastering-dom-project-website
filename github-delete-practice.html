@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To practice how to disabled and enabled the delete btn and hide the h1 text</title>
+</head>
+<body>
+    <h1 id="hide-info">Jeg skal vise hvordan man kan gjemme tekst fra tekstfeltet, og aktivere og diaktivere btn</h1>
+    <input id="delete-confirm" type="text" placeholder="Pls type Delete ">
+    <button id="delete-btn" disabled>Delete</button>
+</body>
+<script>
+    document.getElementById('delete-confirm').addEventListener('keyup', function(event){
+        const text = event.target.value
+        const deleteBtn = document.getElementById('delete-btn');
+        if(text === 'delete'){
+            deleteBtn.removeAttribute ('disabled')
+        }else{
+            deleteBtn.setAttribute('disabled')
+        }
+    })
+    document.getElementById('delete-btn').addEventListener('click', function(){
+        const hidingTekst = document.getElementById('hide-info')
+        hidingTekst.style.display = 'none'
+    })
+</script>
+</html>
